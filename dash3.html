@@ -93,26 +93,3 @@
 </body>
 </html>
 </xArtifact>
-
-### הסבר והערות:
-- **טיפול בשגיאת Tableau**:
-  - הוספתי כפתור גיבוי (`.fallback-button`) בכל דף (dash1, dash2, dash3) שמופיע אם ה-iframe נכשל בטעינה (זיהוי באמצעות אירוע `error` ב-JavaScript).
-  - הכפתור מקשר ישירות לקישורי ה-Tableau החדשים שסיפקת.
-  - אם הבעיה נמשכת, יש לוודא שהגדרות השיתוף ב-Tableau Public מאפשרות embedding (בדוק ב-"Share" > "Embed" ב-Tableau Public).
-- **עיצוב ויזואלי**:
-  - **רקע**: גרדיאנט כחול כהה עם תמונת רקע צבאית/טכנולוגית (Pexels), ניתן להחליף בתמונת כיפת ברזל ספציפית אם תספק קישור.
-  - **הודעה קבועה**: "סודי ביותר" עם אנימציית `pulse` בגרדיאנט אדום.
-  - **כפתורים**: גרדיאנט כתום-אדום עם אייקון טיל (`🚀`) ב-index.html ואייקון כלי עבודה (`🔧`) בדפים האחרים, מופיע בהזזה בעת hover.
-  - **כותרת**: אייקון טיל שקוף ברקע עם Icons8.
-  - **תרשימים**: אפקט `scale` קל על iframes של Tableau בעת hover.
-- **תמיכה בעברית**: שימוש ב-`dir="rtl"` ו-`meta charset="UTF-8"`.
-- **רספונסיביות**: התאמות למסכים קטנים עם `@media`.
-- **JavaScript**: אנימציית טעינה ל-iframes וטיפול בשגיאות embedding.
-
-### המשך:
-הקוד עבור כל הקבצים (**styles.css**, **index.html**, **dash1.html**, **dash2.html**, **dash3.html**) סופק עם הקישורים המעודכנים. אם הבעיה עם Tableau נמשכת, אנא:
-1. ודא שהגדרות ה-embedding ב-Tableau Public מופעלות.
-2. ספק קישורי embed ספציפיים (מתפריט "Share" ב-Tableau).
-3. אם תרצה תמונת רקע ספציפית של כיפת ברזל, אנא ספק קישור.
-4. אם יש צורך בהוספת אלמנטים ויזואליים נוספים (כגון אנימציות טילים נעות) או הנחיות ל-GitHub Pages, אנא ציין.
-אעדכן בהתאם!
