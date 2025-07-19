@@ -133,11 +133,13 @@ header p {
 .tableau-embed iframe {
     border: none;
     width: 100%;
-    height: 100vh; /* Increased from 600px to 80vh for larger display */
-    max-height: 800px;
+    height: 100vh; /* Full viewport height */
+    max-height: none; /* Remove max-height to allow true full-screen */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1; /* Ensure iframe is below fixed elements like audio controls */
 }
 
 .tableau-embed iframe:hover {
